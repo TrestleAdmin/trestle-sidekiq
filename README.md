@@ -2,6 +2,8 @@
 
 > Sidekiq integration plugin for the Trestle admin framework
 
+<img src="https://trestle.io/images/Trestle-Sidekiq.png" width="50%" />
+
 
 ## Getting Started
 
@@ -11,7 +13,11 @@ These instructions assume you have a working Trestle application. To integrate t
 gem 'trestle-sidekiq'
 ```
 
-Run `bundle install`, and then restart your Rails server.
+Run `bundle install`, and then restart your Rails server. You will then be able to access the Sidekiq dashboard by accessing `/admin/sidekiq`
+or by clicking the Sidekiq button in the Trestle header.
+
+Trestle-sidekiq will hook into the [trestle-auth](https://github.com/TrestleAdmin/trestle-auth) plugin to ensure that the Sidekiq dashboard
+can only be accessed by authenticated users.
 
 
 ## License
